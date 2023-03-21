@@ -1,11 +1,13 @@
 import React from 'react'
-import { Home } from './components'
-import { heroapi } from './data/data'
+import { Home, Sales } from './components'
+import { heroapi, popularsales, topratesales } from './data/data'
 const App = () => {
   return (
     <>
     <main>
       <Home heroapi={heroapi} />
+      <Sales feature={popularsales}/>
+      <Sales feature={topratesales} />
     </main>
     </>
   )
