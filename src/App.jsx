@@ -1,5 +1,5 @@
 import React from 'react'
-import { Home, Sales } from './components'
+import { Home, Sales, Featured } from './components'
 import { heroapi, popularsales, topratesales } from './data/data'
 const App = () => {
   return (
@@ -8,6 +8,7 @@ const App = () => {
       <Home heroapi={heroapi} />
       <Sales feature={popularsales} ifSalesExist/>
       <Sales feature={topratesales} />
+      <Featured />
     </main>
     </>
   )
