@@ -4,9 +4,9 @@ import { heroapi, popularsales, topratesales } from './data/data'
 const App = () => {
   return (
     <>
-    <main>
+    <main className='flex flex-col gap-16 relative'>
       <Home heroapi={heroapi} />
-      <Sales feature={popularsales}/>
+      <Sales feature={popularsales} ifSalesExist/>
       <Sales feature={topratesales} />
     </main>
     </>
