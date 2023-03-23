@@ -7,7 +7,7 @@ const App = () => {
     <main className='flex flex-col gap-16 relative'>
       <Home heroapi={heroapi} />
       <Sales feature={popularsales} ifSalesExist/>
-      <Featured content={highlight} />
+      <Featured content={highlight} isFeaturedContentExist/>
       <Sales feature={topratesales} />
       <Featured content={sneaker}/>
     </main>
