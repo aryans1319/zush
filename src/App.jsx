@@ -1,18 +1,29 @@
-import React from 'react'
-import { Home, Sales, Featured } from './components'
-import { heroapi, popularsales, topratesales, highlight, sneaker} from './data/data'
+import React from "react";
+import { Home, Sales, Featured, Stories, Footer, Navbar } from "./components";
+import {
+  heroapi,
+  popularsales,
+  topratesales,
+  highlight,
+  sneaker,
+  story,
+  footerAPI
+} from "./data/data";
 const App = () => {
   return (
     <>
-    <main className='flex flex-col gap-16 relative'>
-      <Home heroapi={heroapi} />
-      <Sales feature={popularsales} ifSalesExist/>
-      <Featured content={highlight} isFeaturedContentExist/>
-      <Sales feature={topratesales} />
-      <Featured content={sneaker}/>
-    </main>
+    <Navbar />
+      <main className="flex flex-col gap-16 relative">
+        <Home heroapi={heroapi} />
+        <Sales feature={popularsales} ifSalesExist />
+        <Featured content={highlight} isFeaturedContentExist />
+        <Sales feature={topratesales} />
+        <Featured content={sneaker} />
+        <Stories story={story}/>
+      </main>
+      <Footer footerAPI={footerAPI}/>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;

@@ -23,7 +23,10 @@ const Featured = ({
             target={"_blank"}
             role="button"
           >
-            <button type="button" className="">
+            <button
+              type="button"
+              className="button-theme bg-slate-900 shadow-slate-900 text-slate-100 py-1.5"
+            >
               {btn}
             </button>
           </a>
