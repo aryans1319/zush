@@ -1,4 +1,3 @@
-import React from 'react'
 import { ChevronDoubleLeftIcon, XMarkIcon } from '@heroicons/react/24/solid';
 
 const CartCount = ({ onCartToggle, totalQTY, onClearCartItems }) => {
